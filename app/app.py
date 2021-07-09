@@ -4,11 +4,10 @@ from tempfile import mkdtemp
 import sys
 import logging
 
+app = flask.Flask(__name__)
+
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
-
-
-app = flask.Flask(__name__)
 
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
