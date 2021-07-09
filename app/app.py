@@ -1,6 +1,11 @@
 import flask
 from flask_session import Session
 from tempfile import mkdtemp
+import sys
+import logging
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 
 app = flask.Flask(__name__)
@@ -16,13 +21,11 @@ Session(app)
 
 @app.route('/')
 def index():
-
     return flask.render_template("landing.html")
 
 
 @app.route('/zodiac')
 def zodiac():
-
     return flask.render_template('zodiac.html')
 
 
