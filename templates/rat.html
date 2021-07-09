@@ -1,0 +1,149 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/rat.css">
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block title %} Year of The Rat Edition {% endblock %}
+
+{% block main %}
+    <section class="ratMain">
+        <div class="ratTitle">
+            <h1 id="year">Year of</h1>
+            <h1 id="ratEdition">The Rat Edition</h1>
+        </div>
+        <div class="ratContainer">
+            <img class="ratKeys" src="/static/media/rat.png" alt="ratKeys">
+            <div class="ratDesc">
+                <p>
+                    Ducky is honored to collaborate with Bounce to bring everyone a truly memorable art piece.
+                    Nowadays, graffiti art is no longer seen as a sneaky creative process,
+                    but a way to deliver one's opinions, attitude and will power in a bold and brave manner.
+                </p>
+                <p>
+                    The Year of the Rat is based on the newest version of Ducky's hot-swap keyboard. 
+                    It represents the attitude of refusing to be limited by challenges.
+                </p>
+        </div>
+        </div>
+        <div class="strokes">
+            <img class='ink1' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink2' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink3' src="/static/media/inkStroke2.png" alt="inkStroke">
+            <img class='ink4' src="/static/media/inkStroke2.png" alt="inkStroke">
+        </div> 
+    </section>
+    <section class="ratDiv">
+        <img id="bounce" src="/static/media/bounce.png" alt="bounce">
+        <div class="ratDivDesc">
+            <h1>BOUNCE <br> Graffiti artist</h1>
+            <p>
+                Taiwan Graffiti Artist Bounce, who has been making graffiti arts for 16 years, is the first Taiwanese to bring this popular form of art to the international stage.
+                From the beginning of his career as a painter-storyteller under bridges, he has turned into an adventurer in the city forest.
+                The artist has now traveled throughout the globe, making history with his paint cans.
+            </p>
+            <p>
+                Bounce, who integrates beauty with rebellion, always challenges viewers with a different level of experience.
+                Asked about his art, Bounce said: “although my thoughts change with the environment and my fictional characters keep evolving, my original passion for graffiti has not changed at all.
+                In the future, I won’t place any limits on myself and will try out different styles and media.
+            </p>
+        </div>
+    </section>
+    <section class="ratDiv">
+        <div class="ratDivDesc">
+            <h1>Dye-sublimation techniques featuring various graffiti elements</h1>
+            <p>The artist has left his graffiti characters on the keycaps. 
+                Which look like they're on a brick wall, to the green mist arising from the keycaps. This allows him to hide and wittily contrasts the color around the mist.
+                Above the mist, there are some familiar traffic symbols,
+                aiding “Bounce Mouse” for his sense of direction when he travels and paints during the night.
+            </p>
+        </div>
+        <img src="/static/media/ratDiv1.jpg" alt="graffiti elements">
+    </section>
+    <section class="ratDiv">
+        <img src="/static/media/hot-swap.jpg" alt="hot-swap">
+        <div class="ratDivDesc">
+            <h1>Hot-Swap</h1>
+            <p>The Year of the Rat keyboard is based on the newest version of Ducky's hot-swap keyboard.</p>
+            <p> Hot swapping is the replacement or addition of components to a computer system without stopping, shutting down, or rebooting the system.</p>
+        </div>
+    </section>
+    <section class="multiSection">
+            <h1 id="multiText">Multi -</h1>
+            <h1 id="functionalText">Functional</h1>
+        <div class="multiDiv">
+            <div class="multiDesc1">
+                <h2>Brighter performance Anti-Ghosting Purple Dual-layer PCB </h2>
+                <p>Dual-layer PCB enhances a longer life expectancy & signal stability with a high gloss silver steel plate.</p>
+            </div>
+            <div class="multiDesc2">
+                <h2>Hologram Security Label</h2>
+                <p>
+                    It helps curtail forgery and prove product authenticity.
+                    The iridescent holographic foil on the labels makes it difficult to duplicate.
+                    This prevents alterations and protects products.
+                </p>
+            </div>
+            <div class="multiDesc3">
+                <h2>Detachable USB Type-C</h2>
+                <p>
+                    We use USB HID with the highest frequency of 1000Hz polling rate,
+                    meaning the keyboard is sending its input signal(s) to your PC 1000 times per second.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="specs">
+        <h1>Specifications</h1>
+        <table>
+            <tr>
+                <th>Items</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Product Number</td>
+                <td>DKYOTR2020</td>
+            </tr>
+            <tr>
+                <td>Structure</td>
+                <td>Mechanical structure</td>
+            </tr>
+            <tr>
+                <td>Trigger switch</td>
+                <td>Cherry MX mechanical switches</td>
+            </tr>
+            <tr>
+                <td>Connection interface</td>
+                <td>USB 2.0</td>
+            </tr>
+            <tr>
+                <td>Keycap material</td>
+                <td>PBT</td>
+            </tr>
+            <tr>
+                <td>Output key number</td>
+                <td>USB N-Key Rollover</td>
+            </tr>
+            <tr>
+                <td>Printing technology</td>
+                <td>Dye-Sublimation</td>
+            </tr>
+            <tr>
+                <td>Dimensions</td>
+                <td>305 x 105 x 38 mm</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>593g</td>
+            </tr>
+            <tr>
+                <td>Origin of production</td>
+                <td>Taiwan</td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}
+

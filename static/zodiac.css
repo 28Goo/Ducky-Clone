@@ -1,0 +1,198 @@
+body {
+  background-color: #fffff2;
+}
+
+.logo {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 55px;
+  filter: invert(1);
+}
+
+.keyboards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboards h1 {
+  position: absolute;
+  font-size: 500px;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 100;
+  pointer-events: none;
+  padding-bottom: 50px;
+  opacity: 0;
+}
+
+.rat,
+.pig,
+.dog,
+.rooster,
+.monkey,
+.goat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 0;
+}
+
+.ratKeys,
+.pigKeys,
+.dogKeys,
+.roosterKeys,
+.monkeyKeys,
+.goatKeys {
+  position: absolute;
+  transition: 1s;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#ratName {
+  color: #5edc1f;
+  transition: 1s;
+}
+
+#pigName {
+  color: #c94e4e;
+  transition: 1s;
+}
+
+#dogName {
+  color: #2d6cdf;
+  transition: 1s;
+}
+
+#roosterName {
+  color: #6e3b3b;
+  transition: 1s;
+}
+
+#monkeyName {
+  color: #e0c45c;
+  transition: 1s;
+}
+
+#goatName {
+  color: #364f6b;
+  transition: 1s;
+}
+
+.ratKeys:hover,
+.pigKeys:hover,
+.dogKeys:hover,
+.roosterKeys:hover,
+.monkeyKeys:hover,
+.goatKeys:hover {
+  filter: brightness(60%);
+}
+
+.ratKeys:hover ~ #ratName,
+.pigKeys:hover ~ #pigName,
+.dogKeys:hover ~ #dogName,
+.roosterKeys:hover ~ #roosterName,
+.monkeyKeys:hover ~ #monkeyName,
+.goatKeys:hover ~ #goatName {
+  opacity: 1;
+  animation: slideRight 1s;
+}
+
+.keyboards img {
+  border-radius: 30px;
+}
+
+.boilerplate {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.left {
+  position: relative;
+  left: -15%;
+  transform: rotate(-90deg);
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+
+.right {
+  position: relative;
+  right: -18%;
+  transform: rotate(90deg);
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-10px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  img {
+    height: 400px;
+  }
+
+  .pigKeys img,
+  .dogKeys img {
+    height: 270px;
+  }
+
+  .left {
+    left: -12%;
+  }
+
+  .right {
+    right: -24%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo img {
+    height: 40px;
+  }
+
+  .boilerplate {
+    display: none;
+  }
+
+  .rat,
+  .pig,
+  .dog,
+  .rooster,
+  .monkey,
+  .goat {
+    height: 65vh;
+  }
+
+  img {
+    height: 200px;
+  }
+
+  .pigKeys img,
+  .dogKeys img {
+    height: 135px;
+  }
+}

@@ -1,0 +1,155 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.logo button {
+  position: absolute;
+  top: 6%;
+  left: 4%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.contactTitle {
+  display: flex;
+}
+
+.contactTitle h1 {
+  font-family: "Six Caps", sans-serif;
+  font-size: 300px;
+  margin-left: 50px;
+}
+
+#us {
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.contactSub p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 60px;
+}
+
+.contactDetails h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.contactDetails p,
+.contactDetails a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.buy h2 {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo button {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .contactMain {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactTitle h1 {
+    margin-left: 10px;
+    font-size: 250px;
+  }
+
+  .contactSub p {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .contactDetails {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactDetails h2 {
+    font-size: 1.5rem;
+  }
+
+  .contactDetails p,
+  .contactDetails a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo img {
+    height: 50px;
+  }
+
+  .contactTitle h1 {
+    font-size: 130px;
+  }
+
+  .contactSub p {
+    font-size: 1rem;
+  }
+
+  .contactDetails {
+    padding-top: 100px;
+    flex-direction: column;
+  }
+
+  .contactDetails h2 {
+    font-size: 1rem;
+  }
+
+  .contactDetails p,
+  .contactDetails a {
+    font-size: 0.8rem;
+  }
+
+  .buy {
+    padding-bottom: 30px;
+  }
+}

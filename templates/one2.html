@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/one2.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block title %} One 2 Series {% endblock %}
+
+{% block main %}
+
+    <section class="boilerplate">
+        <div class="left">
+            Ducky
+        </div>
+        <div class="right">
+            One 2 Series
+        </div>
+    </section>
+
+    <section class="keyboards">
+        <div class="rosa">
+            <img src="/static/media/rosaBG.jpg" alt="rosaBG">
+            <form action="/rosa" class="rosaKeys">
+                <button type="submit">
+                    <img src="/static/media/rosa.png" alt="rosaKeys">
+                </button>
+            </form>
+            <h1 id="rosaName">Rosa</h1>
+        </div>
+        <div class="tuxedo">
+            <img src="/static/media/tuxedoBG.jpg" alt="tuxedoBG">
+            <form action="/tuxedo" class="tuxedoKeys">
+                <button type="submit">
+                    <img src="/static/media/tuxedo.png" alt="tuxedoKeys">
+                </button>
+            </form>
+            <h1 id="tuxedoName">Tuxedo</h1>
+        </div>
+        <div class="bon">
+            <img src="/static/media/bonBG.jpg" alt="bonBG">
+            <form action="/bon" class="bonKeys">
+                <button type="submit">
+                    <img src="/static/media/bon.png" alt="bonKeys">
+                </button>
+            </form>
+            <h1 id="bonName">Bon Voyage</h1>
+        </div>
+        <div class="horizon">
+            <img src="/static/media/horizonBG.jpg" alt="horizonBG">
+            <form action="/horizon" class="horizonKeys">
+                <button type="submit">
+                    <img src="/static/media/horizon.png" alt="horizonKeys">
+                </button>
+            </form>
+            <h1 id="horizonName">Horizon</h1>
+        </div>
+        <div class="skyline">
+            <img src="/static/media/skylineBG.jpg" alt="skylineBG">
+            <form action="/skyline" class="skylineKeys">
+                <button type="submit">
+                    <img src="/static/media/skyline.png" alt="skylineKeys">
+                </button>
+            </form>
+            <h1 id="skylineName">Skyline</h1>
+        </div>
+        <div class="midnight">
+            <img src="/static/media/midnightBG.jpg" alt="midnightBG">
+            <form action="/midnight" class="midnightKeys">
+                <button type="submit">
+                    <img src="/static/media/midnight.png" alt="midnightKeys">
+                </button>
+            </form>
+            <h1 id="midnightName">Midnight</h1>
+        </div>
+    </section>
+
+
+{% endblock %}

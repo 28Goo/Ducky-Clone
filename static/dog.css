@@ -1,0 +1,277 @@
+body {
+  overflow-x: hidden;
+}
+
+.logo img {
+  filter: invert(1);
+}
+
+.dogMain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dogTitle h1 {
+  font-size: 350px;
+  font-family: "Six Caps", sans-serif;
+  color: #2d6cdf;
+}
+
+#year {
+  position: absolute;
+  top: -15%;
+  left: 15%;
+}
+
+#dogEdition {
+  position: absolute;
+  bottom: -15%;
+  right: 10%;
+  color: white;
+  text-shadow: -1px -1px 0 #2d6cdf, 1px -1px 0 #2d6cdf, -1px 1px 0 #2d6cdf,
+    1px 1px 0 #2d6cdf;
+}
+
+.dogContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.dogDesc {
+  padding: 50px;
+}
+
+.dogDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.dogKeys {
+  height: 400px;
+}
+
+.ink1 {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  height: 200px;
+}
+
+.ink2 {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  rotate: 90deg;
+  height: 200px;
+}
+
+.ink3 {
+  position: absolute;
+  top: 28%;
+  right: -13%;
+  height: 100px;
+  rotate: -20deg;
+}
+
+.ink4 {
+  position: absolute;
+  bottom: 30%;
+  left: -15%;
+  height: 100px;
+  rotate: -10deg;
+}
+
+.dogDiv {
+  position: relative;
+  top: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.dogDivDesc {
+  width: 60vh;
+}
+
+.dogDivDesc h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+
+.dogDivDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.dogDiv img {
+  border-radius: 30px;
+}
+
+#michael {
+  height: 550px;
+}
+
+#signature {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
+
+.specs {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specs h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+}
+
+table {
+  text-align: center;
+  width: 60%;
+  margin-top: 50px;
+}
+
+th {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+
+td {
+  border-top: 1px solid black;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .dogTitle h1 {
+    font-size: 200px;
+  }
+
+  #year {
+    top: -8%;
+    left: 5%;
+  }
+
+  #dogEdition {
+    right: -5%;
+    bottom: -6%;
+  }
+
+  .dogContainer {
+    flex-direction: column;
+  }
+
+  .dogKeys {
+    height: 300px;
+  }
+
+  .dogDesc {
+    padding: 0px;
+  }
+
+  .dogDesc p {
+    font-size: 1rem;
+  }
+
+  .strokes {
+    display: none;
+  }
+
+  .dogDiv {
+    flex-direction: column;
+  }
+
+  .dogDiv img {
+    height: 300px;
+  }
+
+  #michael {
+    height: 300px;
+  }
+
+  #signature {
+    top: 30%;
+    height: 150px;
+  }
+
+  .dogDivDesc {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .dogTitle h1 {
+    font-size: 150px;
+  }
+
+  #dogEdition {
+    font-size: 120px;
+    left: -5%;
+  }
+
+  .dogKeys {
+    height: 150px;
+  }
+
+  .dogDesc p {
+    font-size: 0.7rem;
+  }
+
+  #michael {
+    height: 200px;
+  }
+
+  #signature {
+    top: 20%;
+    height: 75px;
+  }
+
+  .dogDivDesc {
+    width: 80%;
+  }
+
+  .dogDivDesc h1 {
+    font-size: 30px;
+  }
+
+  .dogDivDesc p {
+    font-size: 0.7rem;
+  }
+
+  .dogDiv img {
+    height: 200px;
+  }
+
+  .specs h1 {
+    font-size: 30px;
+  }
+
+  table th {
+    font-size: 20px;
+  }
+
+  table td {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,118 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/rosa.css">
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block title %} One 2 Rosa {% endblock %}
+
+{% block main %}
+    <section class="rosaMain">
+        <div class="rosaTitle">
+            <h1 id="one">One</h1>
+            <h1 id="two">2</h1>
+            <h1 id="rosa">Rosa</h1>
+        <div class="rosaContainer">
+            <img class="rosaKeys" src="/static/media/rosa.png" alt="rosaKeys">
+            <div class="rosaDesc">
+                <p>
+                    Dual color bezels to match all varieties of keycap colorways with 3 level angle adjustment keyboard stand.
+                </p>
+                <p>
+                    Features Cherry MX Key Switches.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="bgText">
+            <h1 id="bgOne1">1</h1>
+            <h1 id="bgOne2">1</h1>
+            <h1 id="bgTwo1">2</h1>
+            <h1 id="bgTwo2">2</h1>
+        </div> 
+    </section>
+    <section class="rosaDiv">
+        <div class="rosaDivDesc">
+            <h1>Durable Exceptional Reliable Perfermance</h1>
+            <p>
+                PBT double-shot seamless keycaps <br> German Cherry MX key switches
+            </p>
+        </div>
+        <img src="/static/media/rosaDurable.jpg" alt="Durable">
+    </section>
+    <section class="rosaDiv">
+        <img src="/static/media/rosaDesign.jpg" alt="roosterArtwork">
+        <div class="rosaDivDesc">
+            <h1>A Keyboard Designed for Everyone</h1>
+            <p> The new bezel design shares a similar sleek frame as it’s predecessor, but the One 2 incorporates dual colors on the bezel to match all varieties of keycap colorways. </p>
+        </div>
+    </section>
+    <div class="rosaDiv">
+        <div class="rosaDivDesc">
+            <h1>Detachable USB Type-C</h1>
+            <p> 
+                We use USB HID with the highest frequency of 1000Hz polling rate, meaning the keyboard is sending its input signal(s) to your PC 1000 times per second.
+            </p>
+        </div>
+        <img src="/static/media/rosaUSB.jpg" alt="roosterNumber">
+    </div>
+    <section class="rosaPics">
+        <h1>Overview</h1>
+        <img src="/static/media/rosaBezel.jpg" alt="bezel" id="bezel">
+        <img src="/static/media/rosaOverview.jpg" alt="overview" id="overview">
+        <img src="/static/media/rosaLights.jpg" alt="lights" id="space">
+    </section>
+    <section class="specs">
+        <h1>Specifications</h1>
+        <table>
+            <tr>
+                <th>Items</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Product Number</td>
+                <td>DKON1808</td>
+            </tr>
+            <tr>
+                <td>Structure</td>
+                <td>Mechanical structure</td>
+            </tr>
+            <tr>
+                <td>Trigger switch</td>
+                <td>Cherry MX mechanical switches</td>
+            </tr>
+            <tr>
+                <td>Connection interface</td>
+                <td>USB 2.0</td>
+            </tr>
+            <tr>
+                <td>Keycap material</td>
+                <td>PBT</td>
+            </tr>
+            <tr>
+                <td>Output key number</td>
+                <td>USB N-Key Rollover</td>
+            </tr>
+            <tr>
+                <td>Printing technology</td>
+                <td>Double-Shot</td>
+            </tr>
+            <tr>
+                <td>Dimensions</td>
+                <td>440 x 135 x 40 mm</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>1,100g</td>
+            </tr>
+            <tr>
+                <td>Origin of production</td>
+                <td>Taiwan</td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}
+

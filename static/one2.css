@@ -1,0 +1,199 @@
+body {
+  background-color: #101922;
+  color: white;
+}
+
+img {
+  border-radius: 30px;
+}
+
+.right {
+  right: -15%;
+}
+
+.keyboards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboards h1 {
+  position: absolute;
+  font-size: 500px;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 100;
+  pointer-events: none;
+  padding-bottom: 50px;
+  opacity: 0;
+}
+
+.rosa,
+.tuxedo,
+.bon,
+.horizon,
+.skyline,
+.midnight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rosaKeys:hover,
+.tuxedoKeys:hover,
+.bonKeys:hover,
+.horizonKeys:hover,
+.skylineKeys:hover,
+.midnightKeys:hover {
+  filter: brightness(60%);
+}
+
+.rosaKeys:hover ~ #rosaName,
+.tuxedoKeys:hover ~ #tuxedoName,
+.bonKeys:hover ~ #bonName,
+.horizonKeys:hover ~ #horizonName,
+.skylineKeys:hover ~ #skylineName,
+.midnightKeys:hover ~ #midnightName {
+  opacity: 1;
+  animation: slideRight 1s;
+}
+
+#rosaName {
+  color: #c03546;
+  transition: 1s;
+}
+
+#tuxedoName {
+  color: #cccccc;
+  transition: 1s;
+}
+
+#bonName {
+  color: #2f89fc;
+  transition: 1s;
+}
+
+#horizonName {
+  color: #2d6cc0;
+  transition: 1s;
+}
+
+#skylineName {
+  color: #97a5a1;
+  transition: 1s;
+}
+
+#midnightName {
+  color: #ffffff;
+  transition: 1s;
+}
+
+.rosaKeys,
+.tuxedoKeys,
+.bonKeys,
+.horizonKeys,
+.skylineKeys,
+.midnightKeys {
+  position: absolute;
+  transition: 1s;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.right {
+  z-index: -1;
+}
+
+.boilerplate {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  pointer-events: none;
+}
+
+.left {
+  position: relative;
+  left: -15%;
+  transform: rotate(-90deg);
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+
+.right {
+  position: relative;
+  right: -16%;
+  transform: rotate(90deg);
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+}
+
+.about,
+.buy {
+  color: white;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-10px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  img {
+    height: 400px;
+  }
+
+  .bonKeys img,
+  .horizonKeys img,
+  .skylineKeys img,
+  .midnightKeys img {
+    height: 280px;
+  }
+
+  .left {
+    left: -16%;
+  }
+
+  .right {
+    right: -19%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .boilerplate {
+    display: none;
+  }
+
+  img {
+    height: 200px;
+  }
+
+  .rosa,
+  .tuxedo,
+  .bon,
+  .horizon,
+  .skyline,
+  .midnight {
+    height: 65vh;
+  }
+
+  .bonKeys img,
+  .horizonKeys img,
+  .skylineKeys img,
+  .midnightKeys img {
+    height: 135px;
+  }
+}

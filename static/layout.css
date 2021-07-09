@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: absolute;
+  top: 4.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 55px;
+}
+
+.about {
+  position: absolute;
+  top: 5.5%;
+  left: 5%;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+}
+
+.buy {
+  position: absolute;
+  top: 5.5%;
+  right: 5%;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  z-index: 10;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 20vh;
+  background-color: black;
+}
+
+.links {
+  display: flex;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow {
+  text-align: center;
+}
+
+.follow h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+.socialLinks {
+  margin-top: 20px;
+}
+
+.socialLinks a {
+  color: white;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .links,
+  .socials {
+    padding: 10px;
+  }
+
+  .links a {
+    font-size: 15px;
+  }
+
+  .socials h1 {
+    font-size: 20px;
+  }
+
+  .socialLinks a {
+    padding: 5px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about,
+  .buy {
+    font-size: 15px;
+  }
+
+  .logo {
+    top: 4%;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  footer {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials h1 {
+    font-size: 24px;
+  }
+
+  .socialLinks a {
+    font-size: 15px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links a {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

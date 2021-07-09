@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/landing.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <section class="main">
+        <div class="ducky">
+            <h1>Ducky</h1>
+        </div>
+        <div class="mech">
+            <h1>Mechanical Keyboards</h1>
+        </div>
+    </section>
+    
+    <section class="zodiac">
+            <div class="zodiacTitle">
+                <div class="zodiacTitleTop">
+                    <p>Limited Chinese</p>
+                </div>
+                <div class="zodiacTitleBottom">
+                    <p>Zodiac Edition</p>
+                </div>
+            </div>
+        </form>
+        <div class="zodiacText">
+            <br>
+            <h4>Fusing Traditional Art And Modern Technology As One</h4>
+            <div class="zodiacDesc">
+                <p>"In recent years, we make the best effort to combine traditional culture with modern technologies; 
+                    that is, combined with traditional techniques to promote the keyboard. 
+                    At last, the keyboard is no longer a technology product without a pulse, but a work of art that is full of warmth."
+                </p>
+                <a href="zodiac">Learn More ></a>
+            </div>
+        </div>
+        <div class="zodiacImg">
+            <div class="ratImage">
+                <div class="ratBG"></div>
+                <img class="rat" src="/static/media/landingRat.jpg" alt="rat">
+            </div>
+            <div class="dogImage">
+                <div class="dogBG"></div>
+                <img class="dog" src="/static/media/landingDog.jpg" alt="dog">
+            </div>
+        </div>
+    </section>
+
+    <section class="one2">
+        <form action="/one2">
+            <button type="submit" class="one2Title">
+                <div class="one"> <h1>One</h1> </div>
+                <div class="two"> <h1>2</h1> </div>
+                <div class="series"><h1>Series</h1></div>
+            </button>
+        </form>
+            <h2 id="rosa"> Rosa </h2>
+            <h2 id="tuxedo"> Tuxedo </h2>
+            <h2 id="bon"> Bon Voyage </h2>
+            <h2 id="horizon"> Horizon </h2>
+            <h2 id="skyline"> Skyline </h2>
+            <h2 id="midnight"> Midnight </h2>
+    </section>
+
+    <div class="preload">
+        <div class="intro">
+            <div class="introText">
+                <h1 class="hide">
+                    <span class="hideText">The Bridge Between</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="hideText">Technology</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="hideText">And Art.</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slider"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="/static/animation.js"></script>
+{% endblock %}

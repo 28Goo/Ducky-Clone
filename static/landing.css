@@ -1,0 +1,438 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+html,
+body {
+  animation: preloadScroll 10s;
+}
+
+body {
+  background-color: #121212;
+  z-index: 10;
+  overflow-x: hidden;
+}
+
+.boilerplate {
+  display: none;
+  pointer-events: none;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.main h1 {
+  font-size: 350px;
+  font-family: "Six Caps", serif;
+  letter-spacing: 5px;
+}
+
+.ducky {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  animation: duckyScroll 5s linear infinite alternate;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -5s);
+}
+
+.mech {
+  position: absolute;
+  top: 52%;
+  left: 30%;
+  white-space: nowrap;
+  animation: mechScroll 5s linear infinite alternate;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -5s);
+}
+
+@keyframes duckyScroll {
+  to {
+    transform: translateX(250%);
+  }
+}
+
+@keyframes mechScroll {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.zodiac {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fffff2;
+}
+
+.zodiacTitleTop {
+  position: absolute;
+  bottom: 27%;
+  left: 42%;
+}
+
+.zodiacTitleTop p {
+  font-family: "Six Caps", sans-serif;
+  font-size: 250px;
+  color: black;
+  pointer-events: none;
+}
+
+.zodiacTitleBottom {
+  position: absolute;
+  bottom: 0%;
+  right: 2%;
+  z-index: 3;
+}
+
+.zodiacTitleBottom p {
+  font-family: "Six Caps", sans-serif;
+  font-size: 250px;
+  color: #fffff2;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  pointer-events: none;
+}
+
+.zodiacText {
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  width: 35%;
+  z-index: 2;
+}
+
+.zodiac h4 {
+  font-size: 18px;
+  font-family: "Libre Baskerville", serif;
+  color: black;
+}
+
+.zodiacDesc p {
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  color: black;
+}
+
+.zodiacDesc a {
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  line-height: 5;
+  color: black;
+  text-decoration: none;
+}
+
+.ratBG {
+  position: absolute;
+  height: 260px;
+  width: 500px;
+  background-color: lightgreen;
+  top: 7%;
+  right: 12%;
+}
+
+.rat {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  height: 260px;
+  z-index: 2;
+}
+
+.pigBG {
+  position: absolute;
+  height: 260px;
+  width: 350px;
+  background-color: #420d09;
+  top: 42%;
+  left: 5%;
+}
+
+.pig {
+  position: absolute;
+  top: 45%;
+  left: 8%;
+  height: 260px;
+  z-index: 1;
+}
+
+.dogBG {
+  position: absolute;
+  height: 260px;
+  width: 500px;
+  background-color: #37436b;
+  top: 57%;
+  left: 6%;
+}
+
+.dog {
+  position: absolute;
+  top: 60%;
+  left: 9%;
+  height: 260px;
+  z-index: 0;
+}
+
+.one2 {
+  position: relative;
+  height: 100vh;
+  background-color: #101922;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.one2Title {
+  display: flex;
+  font-size: 280px;
+  font-family: "Six Caps", sans-serif;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.two h1 {
+  margin-left: 40px;
+  color: #101922;
+  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff,
+    1px 1px 0 #ffff;
+}
+
+.series h1 {
+  margin-left: 40px;
+}
+
+.one2 h2 {
+  position: absolute;
+  font-size: 110px;
+  font-family: "Six Caps", sans-serif;
+}
+
+#rosa {
+  top: 0%;
+  left: -0.5%;
+  color: #15202b;
+  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff,
+    1px 1px 0 #ffff;
+}
+
+#tuxedo {
+  bottom: -2%;
+  right: -0.5%;
+}
+
+#bon {
+  top: 7%;
+  right: 4%;
+  color: #15202b;
+  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff,
+    1px 1px 0 #ffff;
+}
+
+#horizon {
+  bottom: -5%;
+  right: 60%;
+  color: #15202b;
+  text-shadow: -1px -1px 0 #ffff, 1px -1px 0 #ffff, -1px 1px 0 #ffff,
+    1px 1px 0 #ffff;
+}
+
+#skyline {
+  top: -7%;
+  left: 60%;
+}
+
+#midnight {
+  top: 70%;
+  left: 3%;
+}
+
+.one2 h2 {
+  opacity: 0;
+  animation: out 1s;
+}
+
+.one2 h2:hover {
+  animation: in 2s;
+}
+
+@keyframes in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.intro {
+  z-index: 20;
+  background: black;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  z-index: 20;
+  background: rgb(61, 66, 66);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+}
+
+.introText {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+@keyframes preloadScroll {
+  from {
+    margin: 0;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  to {
+    margin: 0px;
+    height: auto;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .zodiacText {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 35%;
+    width: 70%;
+    margin: auto;
+  }
+
+  .zodiacImg {
+    display: none;
+  }
+
+  .zodiacTitle p {
+    font-size: 250px;
+  }
+
+  .zodiacTitleTop {
+    top: -3%;
+    left: 0%;
+  }
+
+  .one2Title h1 {
+    font-size: 230px;
+  }
+
+  .one2 h2 {
+    animation: in 2s infinite alternate;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    height: 70vh;
+  }
+
+  .main h1 {
+    font-size: 200px;
+  }
+
+  .ducky {
+    top: 10%;
+  }
+
+  .zodiacTitle p {
+    font-size: 120px;
+  }
+
+  .zodiacText {
+    height: 70%;
+    top: 50%;
+    transform: translateY(-40%);
+  }
+
+  .zodiacDesc p {
+    font-size: 1rem;
+  }
+
+  .one2Title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .one2Title h1 {
+    font-size: 150px;
+    margin: 0px;
+  }
+
+  .one2 h2 {
+    font-size: 60px;
+  }
+
+  #horizon {
+    bottom: -2%;
+  }
+
+  #midnight {
+    top: 55%;
+  }
+
+  #tuxedo {
+    bottom: 4%;
+  }
+
+  #skyline {
+    top: 40%;
+  }
+}

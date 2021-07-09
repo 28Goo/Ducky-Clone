@@ -1,0 +1,137 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/dog.css">
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block title %} Year of The Dog Edition {% endblock %}
+
+{% block main %}
+    <section class="dogMain">
+        <div class="dogTitle">
+            <h1 id="year">Year of</h1>
+            <h1 id="dogEdition">The Dog Edition</h1>
+        </div>
+        <div class="dogContainer">
+            <img class="dogKeys" src="/static/media/dog.png" alt="dogKeys">
+            <div class="dogDesc">
+                <p>
+                    The brand new cutting edge design using Zinc alloy material. 
+                    It is the most significant difference compared to the previous generation.
+                </p>
+                <p>
+                    Typical tattoo in ukiyo-e style to compliment the theme of mythical dog
+                    Limited to 2018 pieces worldwide.
+                </p>
+            </div>
+        </div>
+        <div class="strokes">
+            <img class='ink1' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink2' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink3' src="/static/media/inkStroke2.png" alt="inkStroke">
+            <img class='ink4' src="/static/media/inkStroke2.png" alt="inkStroke">
+        </div> 
+    </section>
+    <section class="dogDiv">
+        <img id="michael" src="/static/media/michael.jpg" alt="kulele">
+        <img src="/static/media/michaelSignature.png" alt="michaelSignature" id="signature">
+        <div class="dogDivDesc">
+            <h1>Michael Chan <br> A Tattoo Master</h1>
+            <p>
+                Michael Chan has been in the tattoo field for over 23 years and served as a judge in many countries such as Thailand, Canada and China. He has a unique perspective on art and beauty.
+                A tattoo is an art form for an individual to express what they feel are significant, profound and commemorative.
+                His inspiration comes from his communication with customers. By understanding their personal story and beliefs, vivid and timeless designs can be created.
+                When fashion is created through something that has a soul, it’s very possible that the end product is something unique and personalized.
+            </p>
+        </div>
+    </section>
+    <section class="dogDiv">
+        <div class="dogDivDesc">
+            <h1>Durable Exceptional Reliable Perfermance</h1>
+            <p>
+                PBT Dye-Sub keycaps <br> German Cherry MX key switches
+            </p>
+        </div>
+        <img src="/static/media/dogDurable.jpg" alt="Durable">
+    </section>
+    <section class="dogDiv">
+        <img src="/static/media/dogArt.jpg" alt="dogArtwork">
+        <div class="dogDivDesc">
+            <h1>Full of Artworks</h1>
+            <p> Uses high-quality PBT Dye-Sub keycaps to withstand different tasks and increase product lifespan. </p>
+        </div>
+    </section>
+    <section class="dogDiv">
+        <div class="dogDivDesc">
+            <h1>TYPICAL Tattoo Style</h1>
+            <p>
+                With images of brave troops, lotus flowers and ghost heads done in ukiyo-e style to compliment the mythical dog.
+            </p>
+            <p> Keycaps designed by Michael Chan. </p>
+        </div>
+        <img src="/static/media/dogTattoo.jpg" alt="dogTattoo">
+    </section>
+    <div class="dogDiv">
+        <img src="/static/media/dogNumber.jpg" alt="dogNumber">
+        <div class="dogDivDesc">
+            <h1>Unique Serial Number</h1>
+            <p> 
+                Only 2018 pieces in existence, thus extremely rare.
+                Each limited keyboard’s inscription plate is number registered to ensure each keyboard’s uniqueness and adding more collecting value.
+            </p>
+        </div>
+    </div>
+    <section class="specs">
+        <h1>Specifications</h1>
+        <table>
+            <tr>
+                <th>Items</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Product Number</td>
+                <td>DKYOTD2018</td>
+            </tr>
+            <tr>
+                <td>Structure</td>
+                <td>Mechanical structure</td>
+            </tr>
+            <tr>
+                <td>Trigger switch</td>
+                <td>Cherry MX mechanical switches</td>
+            </tr>
+            <tr>
+                <td>Connection interface</td>
+                <td>USB 2.0</td>
+            </tr>
+            <tr>
+                <td>Keycap material</td>
+                <td>PBT</td>
+            </tr>
+            <tr>
+                <td>Output key number</td>
+                <td>USB N-Key Rollover</td>
+            </tr>
+            <tr>
+                <td>Printing technology</td>
+                <td>Dye-Sublimation</td>
+            </tr>
+            <tr>
+                <td>Dimensions</td>
+                <td>458 x 134 x 38 mm</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>1,440g</td>
+            </tr>
+            <tr>
+                <td>Origin of production</td>
+                <td>Taiwan</td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}
+

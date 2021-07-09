@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    <link rel="stylesheet" href="/static/layout.css">
+    {% endblock %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <title>Final Project: {% block title %}{% endblock %}</title>
+</head>
+<body>
+
+    <header>
+        <form action="/about">   
+                <button type="submit" class="about">
+                    ABOUT US
+                </button>
+        </form>
+        
+        <form action="/">
+            <button type="submit" class="logo">
+                <img src="/static/media/duckyLogo.png" alt="duckyLogo">
+            </button>
+        </form>
+            
+        <form action="/contact">   
+            <button type="submit" class="buy">
+                CONTACT
+            </button>
+    </form>
+
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <div class="socials">
+            <div class="follow">
+                <h1>Follow Ducky</h1>
+            </div>
+            <div class="socialLinks">
+                <a href="https://www.facebook.com/duckychannel/" target="__blank">FB</a>
+                <a href="https://twitter.com/duckychannel" target="__blank">TW</a>
+                <a href="https://www.instagram.com/duckychannel/?hl=zh-tw" target="__blank">IG</a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="about" class="aboutFooter">About Us</a>
+            <a href="contact" class="buyFooter">Contact</a>
+            <a href="zodiac" class="zodiacFooter">Limited Zodiac Edition</a>
+            <a href="one2" class="one2Footer">One 2 Series</a>
+        </div>
+    </footer>
+    <script src="/static/animation.js"></script>
+</body>
+</html>

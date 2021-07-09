@@ -1,0 +1,261 @@
+body {
+  overflow-x: hidden;
+}
+
+.logo img {
+  filter: invert(1);
+}
+
+.pigMain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pigTitle h1 {
+  font-size: 350px;
+  font-family: "Six Caps", sans-serif;
+  color: #c94e4e;
+}
+
+#year {
+  position: absolute;
+  top: -15%;
+  left: 15%;
+}
+
+#pigEdition {
+  position: absolute;
+  bottom: -15%;
+  right: 10%;
+  color: white;
+  text-shadow: -1px -1px 0 #c94e4e, 1px -1px 0 #c94e4e, -1px 1px 0 #c94e4e,
+    1px 1px 0 #c94e4e;
+}
+
+.pigContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.pigDesc {
+  padding: 50px;
+}
+
+.pigDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.pigKeys {
+  height: 400px;
+}
+
+.ink1 {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  height: 200px;
+}
+
+.ink2 {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  rotate: 90deg;
+  height: 200px;
+}
+
+.ink3 {
+  position: absolute;
+  top: 28%;
+  right: -13%;
+  height: 100px;
+  rotate: -20deg;
+}
+
+.ink4 {
+  position: absolute;
+  bottom: 30%;
+  left: -15%;
+  height: 100px;
+  rotate: -10deg;
+}
+
+.pigDiv {
+  position: relative;
+  top: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.pigDivDesc {
+  width: 60vh;
+}
+
+.pigDivDesc h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+
+.pigDivDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.pigDiv img {
+  border-radius: 30px;
+}
+
+#kulele {
+  height: 550px;
+}
+
+.specs {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specs h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+}
+
+table {
+  text-align: center;
+  width: 60%;
+  margin-top: 50px;
+}
+
+th {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+
+td {
+  border-top: 1px solid black;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pigTitle h1 {
+    font-size: 200px;
+  }
+
+  #year {
+    top: -8%;
+    left: 5%;
+  }
+
+  #pigEdition {
+    right: -5%;
+    bottom: -6%;
+  }
+
+  .pigContainer {
+    flex-direction: column;
+  }
+
+  .pigKeys {
+    height: 300px;
+  }
+
+  .pigDesc {
+    padding: 0px;
+  }
+
+  .pigDesc p {
+    font-size: 1rem;
+  }
+
+  .strokes {
+    display: none;
+  }
+
+  .pigDiv {
+    flex-direction: column;
+  }
+
+  .pigDiv img {
+    height: 300px;
+  }
+
+  #kulele {
+    height: 400px;
+  }
+
+  .pigDivDesc {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .pigTitle h1 {
+    font-size: 150px;
+  }
+
+  #pigEdition {
+    font-size: 120px;
+    left: -5%;
+  }
+
+  .pigKeys {
+    height: 150px;
+  }
+
+  .pigDesc p {
+    font-size: 0.7rem;
+  }
+
+  #kulele {
+    height: 250px;
+  }
+
+  .pigDivDesc {
+    width: 80%;
+  }
+
+  .pigDivDesc h1 {
+    font-size: 30px;
+  }
+
+  .pigDivDesc p {
+    font-size: 0.7rem;
+  }
+
+  .pigDiv img {
+    height: 200px;
+  }
+
+  .specs h1 {
+    font-size: 30px;
+  }
+
+  table th {
+    font-size: 20px;
+  }
+
+  table td {
+    font-size: 0.7rem;
+  }
+}

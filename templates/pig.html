@@ -1,0 +1,141 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/pig.css">
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block title %} Year of The Pig Edition {% endblock %}
+
+{% block main %}
+    <section class="pigMain">
+        <div class="pigTitle">
+            <h1 id="year">Year of</h1>
+            <h1 id="pigEdition">The Pig Edition</h1>
+        <div class="pigContainer">
+            <img class="pigKeys" src="/static/media/pig.png" alt="pigKeys">
+            <div class="pigDesc">
+                <p>
+                    Ducky is privileged to collaborate with Master Kulele Ruladen.
+                    We believe that this limited keyboard is a unification of technology and the Formosan culture,
+                    hoping to show their spiritual beliefs and vibrant culture to the rest of the world.
+                </p>
+                <p>
+                    Ducky celebrates this year’s Chinese zodiac animal with a special design. 
+                    Only 2019 pieces in existence, thus extremely rare.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="strokes">
+            <img class='ink1' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink2' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink3' src="/static/media/inkStroke2.png" alt="inkStroke">
+            <img class='ink4' src="/static/media/inkStroke2.png" alt="inkStroke">
+        </div> 
+    </section>
+    <section class="pigDiv">
+        <img id="kulele" src="/static/media/kulele.jpg" alt="kulele">
+        <div class="pigDivDesc">
+            <h1>Kulele Ruladen <br> A metalwork master</h1>
+            <p>
+                Kulele Ruladen’s passion is to bring the Formosan culture to light through arts and crafts.
+                Over Master Kulele’s career, he has received various international awards, cementing his places as one of the leading artists in all of Taiwan.
+                Whether it is to showcase the historical traditions of the community, 
+                or to bring up issues of interest of the Taiwanese indigenous people,
+                Kulele conveys their rich and diverse history through contemporary, modern metalwork.
+            </p>
+        </div>
+    </section>
+    <section class="pigDiv">
+        <div class="pigDivDesc">
+            <h1>Dye-sublimation techniques featuring various pictograms</h1>
+            <p>
+                Bronze is commonly used as materials for aesthetic creation by the Paiwan society.
+                After communicating with Master Kulele Ruladen, bronze-red was chosen to be presented on keycaps of this limited edition,
+                plus dye-sublimation techniques featuring various pictograms. (e.g. axe, bow and arrow, vine)
+            </p>
+        </div>
+        <img src="/static/media/pigDye.jpg" alt="graffiti elements">
+    </section>
+    <section class="pigDiv">
+        <img src="/static/media/pigSpace.jpg" alt="hot-swap">
+        <div class="pigDivDesc">
+            <h1>The Year Of The Pig Spacebar</h1>
+            <p>
+                The wild boar on the spacebar, noticeable hawk feather on its top represents the aristocracy class of men(the sun) and women(lily).
+                The meadow beneath consists of triangular snake totems, which symbolized the ancestor of Paiwan people.
+                All the patterns implicate the spirit of Paiwan culture.
+            </p>
+        </div>
+    </section>
+    <section class="pigDiv">
+        <div class="pigDivDesc">
+            <h1>4 unique dye-sub keycaps inspired by Paiwan glass beads</h1>
+            <p>
+                To inject even more Paiwan traditions into this keyboard, four unique dye-sub keycaps inspired by Paiwan glass beads are included in the package.
+                Love, courage, nobility, and agility are each represented by these keycaps, significant traits in their history.
+            </p>
+        </div>
+        <img src="/static/media/pig4.jpg" alt="pig4">
+    </section>
+    <div class="pigDiv">
+        <img src="/static/media/pigUSB.jpg" alt="pigUSB">
+        <div class="pigDivDesc">
+            <h1>Detachable USB Type-C</h1>
+            <p> We use USB HID with the highest frequency of 1000Hz polling rate, meaning the keyboard is sending its input signal(s) to your PC 1000 times per second. </p>
+        </div>
+    </div>
+    <section class="specs">
+        <h1>Specifications</h1>
+        <table>
+            <tr>
+                <th>Items</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Product Number</td>
+                <td>DKYOTP2019</td>
+            </tr>
+            <tr>
+                <td>Structure</td>
+                <td>Mechanical structure</td>
+            </tr>
+            <tr>
+                <td>Trigger switch</td>
+                <td>Cherry MX mechanical switches</td>
+            </tr>
+            <tr>
+                <td>Connection interface</td>
+                <td>USB 2.0</td>
+            </tr>
+            <tr>
+                <td>Keycap material</td>
+                <td>PBT</td>
+            </tr>
+            <tr>
+                <td>Output key number</td>
+                <td>USB N-Key Rollover</td>
+            </tr>
+            <tr>
+                <td>Printing technology</td>
+                <td>Dye-Sublimation</td>
+            </tr>
+            <tr>
+                <td>Dimensions</td>
+                <td>320 x 105 x 40 mm</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>870g</td>
+            </tr>
+            <tr>
+                <td>Origin of production</td>
+                <td>Taiwan</td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}
+

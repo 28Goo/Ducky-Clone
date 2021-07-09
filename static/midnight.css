@@ -1,0 +1,332 @@
+body {
+  overflow-x: hidden;
+}
+
+.logo img {
+  filter: invert(1);
+}
+
+.midnightMain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.midnightTitle h1 {
+  font-size: 350px;
+  font-family: "Six Caps", sans-serif;
+  color: #05091d;
+}
+
+#one {
+  position: absolute;
+  top: -10%;
+  left: 20%;
+  color: #05091d;
+}
+
+#two {
+  position: absolute;
+  top: -10%;
+  left: 36%;
+  color: white;
+  text-shadow: -1px -1px 0 #05091d, 1px -1px 0 #05091d, -1px 1px 0 #05091d,
+    1px 1px 0 #05091d;
+}
+
+#midnight {
+  position: absolute;
+  bottom: -10%;
+  right: 8%;
+  color: #05091d;
+}
+
+.midnightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.midnightDesc {
+  padding: 50px;
+}
+
+.midnightDesc p {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.midnightKeys {
+  height: 400px;
+}
+
+.bgText {
+  font-family: "Six Caps", sans-serif;
+  font-size: 100px;
+}
+
+#bgOne1 {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  rotate: 20deg;
+}
+
+#bgOne2 {
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+  rotate: -20deg;
+}
+
+#bgTwo1 {
+  position: absolute;
+  top: 8%;
+  right: 30%;
+  rotate: -20deg;
+}
+
+#bgTwo2 {
+  position: absolute;
+  bottom: 15%;
+  left: 25%;
+  rotate: 20deg;
+}
+
+.midnightDiv {
+  position: relative;
+  top: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.midnightDivDesc {
+  width: 60vh;
+}
+
+.midnightDivDesc h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+
+.midnightDivDesc p {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.midnightDiv img {
+  border-radius: 30px;
+}
+
+.midnightPics {
+  position: relative;
+  height: 100vh;
+}
+
+.midnightPics img {
+  height: 400px;
+  border-radius: 30px;
+}
+
+.midnightPics h1 {
+  position: absolute;
+  top: 60%;
+  left: -2%;
+  font-family: "Six Caps", sans-serif;
+  font-size: 350px;
+  color: white;
+  text-shadow: -1px -1px 0 #05091d, 1px -1px 0 #05091d, -1px 1px 0 #05091d,
+    1px 1px 0 #05091d;
+}
+
+#bezel {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#overview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#lights {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.specs {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specs h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+}
+
+table {
+  text-align: center;
+  width: 60%;
+  margin-top: 50px;
+}
+
+th {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+
+td {
+  border-top: 1px solid black;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .midnightTitle h1 {
+    font-size: 250px;
+  }
+
+  .about {
+    color: white;
+  }
+
+  #one {
+    top: -8%;
+    left: 5%;
+  }
+
+  #two {
+    top: -8%;
+    left: 33%;
+  }
+
+  #midnight {
+    right: 5%;
+    bottom: -6%;
+  }
+
+  #bgOne1 {
+    top: 20%;
+  }
+
+  #bgTwo2 {
+    bottom: 5%;
+  }
+
+  .midnightContainer {
+    flex-direction: column;
+  }
+
+  .midnightKeys {
+    height: 300px;
+  }
+
+  .midnightKeys {
+    padding: 0px;
+  }
+
+  .midnightKeys p {
+    font-size: 1.5rem;
+  }
+
+  .midnightDiv {
+    flex-direction: column;
+  }
+
+  .midnightDiv img {
+    height: 300px;
+  }
+
+  .midnightDivDesc {
+    order: 1;
+  }
+
+  .midnightPics img {
+    height: 200px;
+  }
+
+  .midnightPics h1 {
+    font-size: 220px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .midnightTitle h1 {
+    font-size: 150px;
+  }
+
+  #two {
+    left: 40%;
+  }
+
+  .midnightKeys {
+    height: 150px;
+  }
+
+  .midnightDesc p {
+    font-size: 1rem;
+  }
+
+  .bgText h1 {
+    font-size: 100px;
+  }
+
+  .midnightDiv img {
+    height: 200px;
+  }
+
+  .midnightDivDesc {
+    width: 80%;
+  }
+
+  .midnightDivDesc h1 {
+    font-size: 30px;
+  }
+
+  .midnightDivDesc p {
+    font-size: 1rem;
+  }
+
+  .midnightPics img {
+    height: 200px;
+  }
+
+  .midnightPics h1 {
+    top: 80%;
+    font-size: 150px;
+  }
+
+  .specs h1 {
+    font-size: 30px;
+  }
+
+  table th {
+    font-size: 20px;
+  }
+
+  table td {
+    font-size: 0.7rem;
+  }
+}

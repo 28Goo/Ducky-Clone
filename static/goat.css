@@ -1,0 +1,308 @@
+body {
+  overflow-x: hidden;
+  background-color: #fffff2;
+}
+
+.logo img {
+  filter: invert(1);
+}
+
+.goatMain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.goatTitle h1 {
+  font-size: 350px;
+  font-family: "Six Caps", sans-serif;
+  color: #364f6b;
+}
+
+#year {
+  position: absolute;
+  top: -15%;
+  left: 15%;
+}
+
+#goatEdition {
+  position: absolute;
+  bottom: -15%;
+  right: 10%;
+  color: #fffff2;
+  text-shadow: -1px -1px 0 #364f6b, 1px -1px 0 #364f6b, -1px 1px 0 #364f6b,
+    1px 1px 0 #364f6b;
+}
+
+.goatContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.goatDesc {
+  padding: 50px;
+}
+
+.goatDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.goatKeys {
+  height: 600px;
+}
+
+.ink1 {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  height: 200px;
+}
+
+.ink2 {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  rotate: 90deg;
+  height: 200px;
+}
+
+.ink3 {
+  position: absolute;
+  top: 28%;
+  right: -13%;
+  height: 100px;
+  rotate: -20deg;
+}
+
+.ink4 {
+  position: absolute;
+  bottom: 30%;
+  left: -15%;
+  height: 100px;
+  rotate: -10deg;
+}
+
+.goatDiv {
+  position: relative;
+  top: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.goatDivDesc {
+  width: 60vh;
+}
+
+.goatDivDesc h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+
+.goatDivDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.goatDiv img {
+  border-radius: 30px;
+}
+
+.goatPics {
+  position: relative;
+  height: 100vh;
+}
+
+.goatPics h1 {
+  position: absolute;
+  top: 60%;
+  left: -2%;
+  font-family: "Six Caps", sans-serif;
+  font-size: 350px;
+  color: #fffff2;
+  text-shadow: -1px -1px 0 #364f6b, 1px -1px 0 #364f6b, -1px 1px 0 #364f6b,
+    1px 1px 0 #364f6b;
+}
+
+.goatPics img {
+  height: 400px;
+  border-radius: 30px;
+}
+
+#bezel {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#overview {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#space {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.specs {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specs h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+}
+
+table {
+  text-align: center;
+  width: 60%;
+  margin-top: 50px;
+}
+
+th {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+
+td {
+  border-top: 1px solid black;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .goatTitle h1 {
+    font-size: 190px;
+  }
+
+  #year {
+    top: -8%;
+    left: 5%;
+  }
+
+  #goatEdition {
+    right: -5%;
+    bottom: -6%;
+  }
+
+  .goatContainer {
+    flex-direction: column;
+  }
+
+  .goatKeys {
+    height: 400px;
+  }
+
+  .goatDesc {
+    padding: 0px;
+  }
+
+  .goatDesc p {
+    font-size: 1rem;
+  }
+
+  .strokes {
+    display: none;
+  }
+
+  .goatDiv {
+    flex-direction: column;
+  }
+
+  .goatDiv img {
+    height: 300px;
+  }
+
+  .goatDivDesc {
+    order: 1;
+  }
+
+  .goatPics img {
+    height: 200px;
+  }
+
+  .goatPics h1 {
+    font-size: 220px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .goatTitle h1 {
+    font-size: 150px;
+  }
+
+  #goatEdition {
+    font-size: 90px;
+    bottom: -3%;
+    left: 13%;
+  }
+
+  .goatKeys {
+    height: 200px;
+  }
+
+  .goatDesc p {
+    font-size: 0.8rem;
+  }
+
+  .goatDiv img {
+    height: 200px;
+  }
+
+  .goatDivDesc {
+    width: 80%;
+  }
+
+  .goatDivDesc h1 {
+    font-size: 30px;
+  }
+
+  .goatDivDesc p {
+    font-size: 0.7rem;
+  }
+
+  .goatPics img {
+    height: 200px;
+  }
+
+  .goatPics h1 {
+    top: 80%;
+    font-size: 150px;
+  }
+
+  .specs h1 {
+    font-size: 30px;
+  }
+
+  table th {
+    font-size: 20px;
+  }
+
+  table td {
+    font-size: 0.7rem;
+  }
+}

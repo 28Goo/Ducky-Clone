@@ -1,0 +1,171 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: #fa5b3d;
+}
+
+.home {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.home a {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.ducky {
+  position: absolute;
+  bottom: -13%;
+  left: 5%;
+  font-family: "Six Caps", sans-serif;
+  font-size: 200px;
+  color: black;
+  pointer-events: none;
+}
+
+.date {
+  position: absolute;
+  top: -15%;
+  right: 5%;
+  font-family: "Six Caps", sans-serif;
+  font-size: 200px;
+  color: black;
+  pointer-events: none;
+}
+
+.about1 {
+  position: absolute;
+  text-align: left;
+  top: 20%;
+  left: 20%;
+  width: 50vh;
+  line-height: 1.7;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+.about2 {
+  position: absolute;
+  text-align: left;
+  bottom: 20%;
+  right: 20%;
+  width: 50vh;
+  line-height: 1.7;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+.about1 h3,
+.about2 h3 {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.socials {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.socials a {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .ducky,
+  .date {
+    font-size: 150px;
+  }
+
+  .ducky {
+    bottom: -8%;
+  }
+
+  .date {
+    top: -8%;
+  }
+
+  .about1 {
+    top: 30%;
+  }
+
+  .about2 {
+    bottom: 30%;
+  }
+
+  .about1 h3,
+  .about2 h3 {
+    font-size: 1.2rem;
+  }
+
+  .about1 p,
+  .about2 p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home {
+    top: 3%;
+  }
+
+  .socials {
+    bottom: 3%;
+  }
+
+  .home a,
+  .socials a {
+    font-size: 0.8rem;
+  }
+
+  .ducky,
+  .date {
+    display: none;
+  }
+
+  .ducky {
+    left: -2%;
+  }
+
+  .date {
+    right: -2%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .about1,
+  .about2 {
+    position: unset;
+    width: 30vh;
+    padding: 10px;
+  }
+
+  .about1 h3,
+  .about2 h3 {
+    position: unset;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,114 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/monkey.css">
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block title %} Year of The Monkey Edition {% endblock %}
+
+{% block main %}
+    <section class="monkeyMain">
+        <div class="monkeyTitle">
+            <h1 id="year">Year of</h1>
+            <h1 id="monkeyEdition">The Monkey Edition</h1>
+        <div class="monkeyContainer">
+            <img class="monkeyKeys" src="/static/media/monkey.png" alt="monkeyKeys">
+            <div class="monkeyDesc">
+                <p>
+                    The Ducky Year of the Monkey is a limited edition RGB mechanical keyboard that features a two colour anodised finish with a high quality aluminium top case, 
+                    side LED lighting, Ducky Colour Palette, a built-in flexible mouse bungee, USB N-key rollover, a 1000Hz report rate and USB repeat acceleration. 
+                </p>
+                <p>
+                    Built with German Cherry MX switches, the YOTM features RGB lighting that's brighter than ever before thanks to the 3528 SMD RGB LEDs, 
+                    along with all the insane backlighting effects from Ducky including rain drop mode, 100% full backlight, wave and colour cycling. 
+                    Limited to 2017 pieces worldwide.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="strokes">
+            <img class='ink1' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink2' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink3' src="/static/media/inkStroke2.png" alt="inkStroke">
+            <img class='ink4' src="/static/media/inkStroke2.png" alt="inkStroke">
+        </div> 
+    </section>
+    <section class="monkeyDiv">
+        <img src="/static/media/monkeyCherry.jpg" alt="monkeyCherry">
+        <div class="monkeyDivDesc">
+            <h1>The Best Made in Germany Cherry MX RGB Switches</h1>
+            <p> Ducky uses only genuine Cherry MX switches, and its life cycle for over 50 million times. </p>
+            <p> Standard cross-shaped, allow users to replace keycaps easilty. </p>
+        </div>
+    </section>
+    <section class="monkeyDiv">
+        <div class="monkeyDivDesc">
+            <h1>Floating Keycap</h1>
+            <p> Ducky's first floating keycap design. </p>
+        </div>
+        <img src="/static/media/monkeyKey.jpg" alt="dogTattoo">
+    </section>
+    <div class="monkeyDiv">
+        <img src="/static/media/monkeyNumber.jpg" alt="Number">
+        <div class="monkeyDivDesc">
+            <h1>Unique Serial Number</h1>
+            <p> 
+                Only 2016 pieces in existence, thus extremely rare.
+                Each limited keyboard’s inscription plate is number registered to ensure each keyboard’s uniqueness and adding more collecting value.
+            </p>
+        </div>
+    </div>
+    <section class="specs">
+        <h1>Specifications</h1>
+        <table>
+            <tr>
+                <th>Items</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Product Number</td>
+                <td>DKYOTM2016</td>
+            </tr>
+            <tr>
+                <td>Structure</td>
+                <td>Mechanical structure</td>
+            </tr>
+            <tr>
+                <td>Trigger switch</td>
+                <td>Cherry MX mechanical switches</td>
+            </tr>
+            <tr>
+                <td>Connection interface</td>
+                <td>USB 2.0</td>
+            </tr>
+            <tr>
+                <td>Keycap material</td>
+                <td>ABS</td>
+            </tr>
+            <tr>
+                <td>Output key number</td>
+                <td>USB N-Key Rollover</td>
+            </tr>
+            <tr>
+                <td>Printing technology</td>
+                <td>Double-shot or Laser engrave</td>
+            </tr>
+            <tr>
+                <td>Dimensions</td>
+                <td>430 x 150 x 45 mm</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>1,315g</td>
+            </tr>
+            <tr>
+                <td>Origin of production</td>
+                <td>Taiwan</td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}
+

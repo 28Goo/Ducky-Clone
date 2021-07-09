@@ -1,0 +1,116 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/rooster.css">
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block title %} Year of The Rooster Edition {% endblock %}
+
+{% block main %}
+    <section class="roosterMain">
+        <div class="roosterTitle">
+            <h1 id="year">Year of</h1>
+            <h1 id="roosterEdition">The Rooster Edition</h1>
+        </div>
+        <div class="roosterContainer">
+            <img class="roosterKeys" src="/static/media/rooster.png" alt="roosterKeys">
+            <div class="roosterDesc">
+                <p>
+                    The new bezel design shares a similar sleek frame as it’s predecessor, 
+                    but the One 2 incorporates dual colors on the bezel to match all varieties of keycap colorways.
+                </p>
+            </div>
+        </div>
+        <div class="strokes">
+            <img class='ink1' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink2' src="/static/media/inkStroke.png" alt="inkStroke">
+            <img class='ink3' src="/static/media/inkStroke2.png" alt="inkStroke">
+            <img class='ink4' src="/static/media/inkStroke2.png" alt="inkStroke">
+        </div> 
+    </section>
+    <section class="roosterDiv">
+        <div class="roosterDivDesc">
+            <h1>Durable Exceptional Reliable Perfermance</h1>
+            <p>
+                PBT double-shot seamless keycaps <br> German Cherry MX key switches
+            </p>
+        </div>
+        <img src="/static/media/roosterDurable.jpg" alt="Durable">
+    </section>
+    <section class="roosterDiv">
+        <img src="/static/media/roosterArt.jpg" alt="roosterArtwork">
+        <div class="roosterDivDesc">
+            <h1>Full of Artworks</h1>
+            <p> Uses high-quality PBT double-shot seamless keycaps to withstand different tasks and increase product lifespan. </p>
+        </div>
+    </section>
+    <div class="roosterDiv">
+        <div class="roosterDivDesc">
+            <h1>Unique Serial Number</h1>
+            <p> 
+                Each keyboard will be number registered, limited to only 2017 pcs.
+                Each limited keyboard’s inscription plate is number registered to ensure each keyboard’s uniqueness and adding more collecting value.
+            </p>
+        </div>
+        <img src="/static/media/roosterNumber.jpg" alt="roosterNumber">
+    </div>
+    <section class="roosterPics">
+        <h1>Overview</h1>
+        <img src="/static/media/roosterBezel.jpg" alt="bezel" id="bezel">
+        <img src="/static/media/roosterOverview.jpg" alt="overview" id="overview">
+        <img src="/static/media/roosterSpace.jpg" alt="spacebar" id="space">
+    </section>
+    <section class="specs">
+        <h1>Specifications</h1>
+        <table>
+            <tr>
+                <th>Items</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Product Number</td>
+                <td>DKYOTR2017</td>
+            </tr>
+            <tr>
+                <td>Structure</td>
+                <td>Mechanical structure</td>
+            </tr>
+            <tr>
+                <td>Trigger switch</td>
+                <td>Cherry MX mechanical switches</td>
+            </tr>
+            <tr>
+                <td>Connection interface</td>
+                <td>USB 2.0</td>
+            </tr>
+            <tr>
+                <td>Keycap material</td>
+                <td>ABS or PBT</td>
+            </tr>
+            <tr>
+                <td>Output key number</td>
+                <td>USB N-Key Rollover</td>
+            </tr>
+            <tr>
+                <td>Printing technology</td>
+                <td>Double-Shot or Laser Engraved</td>
+            </tr>
+            <tr>
+                <td>Dimensions</td>
+                <td>440 x 135 x 40 mm</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>1,100g</td>
+            </tr>
+            <tr>
+                <td>Origin of production</td>
+                <td>Taiwan</td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}
+

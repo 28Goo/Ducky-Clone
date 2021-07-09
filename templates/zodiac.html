@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/layout.css">
+<link rel="stylesheet" href="/static/zodiac.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block title %} Zodiac {% endblock %}
+
+{% block main %}
+
+    <section class="boilerplate">
+        <div class="left">
+            Ducky
+        </div>
+        <div class="right">
+            Limited Chinese Zodiac Edition
+        </div>
+    </section>
+
+    <section class="keyboards">
+        <div class="rat">
+            <img src="/static/media/ratBG.jpg" alt="ratBG">
+            <form action="/rat" class="ratKeys">
+                <button type="submit">
+                    <img src="/static/media/rat.png" alt="ratKeys">
+                </button>
+            </form>
+            <h1 id="ratName">Rat</h1>
+        </div>
+        <div class="pig">
+            <img src="/static/media/pigBG.jpg" alt="pigBG">
+            <form action="/pig" class="pigKeys">
+                <button type="submit">
+                    <img src="/static/media/pig.png" alt="pigKeys">
+                </button>
+            </form>
+            <h1 id="pigName">Pig</h1>
+        </div>
+        <div class="dog">
+            <img src="/static/media/dogBG.jpg" alt="dogBG">
+            <form action="/dog" class="dogKeys">
+                <button type="submit">
+                    <img src="/static/media/dog.png" alt="dogKeys">
+                </button>
+            </form>
+            <h1 id="dogName">Dog</h1>
+        </div>
+        <div class="rooster">
+            <img src="/static/media/roosterBG.jpg" alt="roosterBG">
+            <form action="/rooster" class="roosterKeys">
+                <button type="submit">
+                    <img src="/static/media/rooster.png" alt="roosterKeys">
+                </button>
+            </form>
+            <h1 id="roosterName">Rooster</h1>
+        </div>
+        <div class="monkey">
+            <img src="/static/media/monkeyBG.jpg" alt="monkeyBG">
+            <form action="/monkey" class="monkeyKeys">
+                <button type="submit">
+                    <img src="/static/media/monkey.png" alt="monkeyKeys">
+                </button>
+            </form>
+            <h1 id="monkeyName">Monkey</h1>
+        </div>
+        <div class="goat">
+            <img src="/static/media/goatBG.jpg" alt="goatBG">
+            <form action="/goat" class="goatKeys">
+                <button type="submit">
+                    <img src="/static/media/goat.png" alt="goatKeys">
+                </button>
+            </form>
+            <h1 id="goatName">Goat</h1>
+        </div>
+    </section>
+{% endblock %}

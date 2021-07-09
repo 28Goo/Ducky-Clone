@@ -1,0 +1,386 @@
+body {
+  overflow-x: hidden;
+}
+
+.logo img {
+  filter: invert(1);
+}
+
+.ratMain {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ratTitle h1 {
+  font-size: 350px;
+  font-family: "Six Caps", sans-serif;
+  color: #5edc1f;
+}
+
+#year {
+  position: absolute;
+  top: -12%;
+  left: 15%;
+}
+
+#ratEdition {
+  position: absolute;
+  bottom: -15%;
+  right: 10%;
+  color: white;
+  text-shadow: -1px -1px 0 #4bad1a, 1px -1px 0 #4bad1a, -1px 1px 0 #4bad1a,
+    1px 1px 0 #4bad1a;
+}
+
+.ratContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.ratKeys {
+  height: 700px;
+  padding: 50px;
+}
+
+.ratDesc {
+  padding: 50px;
+}
+
+.ratDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.ink1 {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  height: 200px;
+}
+
+.ink2 {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  rotate: 90deg;
+  height: 200px;
+}
+
+.ink3 {
+  position: absolute;
+  top: 28%;
+  right: -13%;
+  height: 100px;
+  rotate: -20deg;
+}
+
+.ink4 {
+  position: absolute;
+  bottom: 30%;
+  left: -15%;
+  height: 100px;
+  rotate: -10deg;
+}
+
+.ratDiv {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.ratDivDesc {
+  width: 60vh;
+}
+
+.ratDivDesc h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+
+.ratDivDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.ratDiv img {
+  border-radius: 30px;
+}
+
+#bounce {
+  height: 800px;
+}
+
+.multiSection {
+  position: relative;
+  height: 100vh;
+  max-width: 100%;
+}
+
+#multiText,
+#functionalText {
+  font-family: "Six Caps", sans-serif;
+  font-size: 250px;
+  color: #5edc1f;
+}
+
+#multiText {
+  position: absolute;
+  top: -15%;
+  right: -2%;
+  color: white;
+  text-shadow: -1px -1px 0 #4bad1a, 1px -1px 0 #4bad1a, -1px 1px 0 #4bad1a,
+    1px 1px 0 #4bad1a;
+}
+
+#functionalText {
+  position: absolute;
+  bottom: -10%;
+  left: -1%;
+}
+
+.multiDiv {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  width: 100%;
+}
+
+.multiDiv h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+}
+
+.multiDiv p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.multiDesc1,
+.multiDesc2,
+.multiDesc3 {
+  width: 60vh;
+  margin-left: 50px;
+}
+
+.multiDesc1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.multiDesc2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.multiDesc3 {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+.specs {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specs h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+}
+
+table {
+  text-align: center;
+  width: 60%;
+  margin-top: 50px;
+}
+
+th {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+
+td {
+  border-top: 1px solid black;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .ratTitle h1 {
+    font-size: 200px;
+  }
+
+  .ratTitle {
+    margin: 0px;
+  }
+
+  #year {
+    top: -8%;
+    left: 5%;
+  }
+
+  #ratEdition {
+    right: -5%;
+    bottom: -6%;
+  }
+
+  .ratContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ratKeys {
+    height: 400px;
+    padding: 0px;
+  }
+
+  .ratDesc {
+    padding: 0px;
+  }
+
+  .strokes {
+    display: none;
+  }
+
+  #bounce {
+    height: 350px;
+  }
+
+  .ratDiv {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .ratDivDesc {
+    order: 1;
+  }
+
+  .ratDivDesc h1 {
+    font-size: 50px;
+  }
+
+  .ratDiv img {
+    height: 300px;
+  }
+
+  #multiText,
+  #functionalText {
+    font-size: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ratTitle h1 {
+    font-size: 150px;
+  }
+
+  #ratEdition {
+    font-size: 120px;
+    left: -5%;
+  }
+
+  .ratKeys {
+    height: 200px;
+  }
+
+  .ratDesc p {
+    font-size: 0.7rem;
+  }
+
+  #bounce {
+    margin-top: 130px;
+    height: 200px;
+  }
+
+  .ratDivDesc {
+    width: 100%;
+  }
+
+  .ratDivDesc h1 {
+    font-size: 30px;
+  }
+
+  .ratDivDesc p {
+    font-size: 0.7rem;
+  }
+
+  .ratDiv img {
+    height: 200px;
+  }
+
+  #multiText,
+  #functionalText {
+    font-size: 150px;
+  }
+
+  .multiDiv {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .multiDiv h2 {
+    font-size: 25px;
+  }
+
+  .multiDiv p {
+    font-size: 0.7rem;
+  }
+
+  .multiDesc1,
+  .multiDesc2,
+  .multiDesc3 {
+    position: unset;
+    width: 70%;
+    transform: translate(0%, 0%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .specs h1 {
+    font-size: 25px;
+    padding-top: 70px;
+  }
+
+  table {
+    margin-top: 10px;
+  }
+
+  table th {
+    font-size: 20px;
+  }
+
+  table td {
+    font-size: 0.7rem;
+  }
+}

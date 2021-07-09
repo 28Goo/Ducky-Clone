@@ -1,0 +1,246 @@
+body {
+  overflow-x: hidden;
+}
+
+.logo img {
+  filter: invert(1);
+}
+
+.monkeyMain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.monkeyTitle h1 {
+  font-size: 350px;
+  font-family: "Six Caps", sans-serif;
+  color: #e0c45c;
+}
+
+#year {
+  position: absolute;
+  top: -15%;
+  left: 15%;
+}
+
+#monkeyEdition {
+  position: absolute;
+  bottom: -15%;
+  right: 5%;
+  color: white;
+  text-shadow: -1px -1px 0 #e0c45c, 1px -1px 0 #e0c45c, -1px 1px 0 #e0c45c,
+    1px 1px 0 #e0c45c;
+}
+
+.monkeyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.monkeyDesc {
+  padding: 50px;
+}
+
+.monkeyDesc p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.monkeyKeys {
+  height: 600px;
+}
+
+.ink1 {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  height: 200px;
+}
+
+.ink2 {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  rotate: 90deg;
+  height: 200px;
+}
+
+.ink3 {
+  position: absolute;
+  top: 28%;
+  right: -13%;
+  height: 100px;
+  rotate: -20deg;
+}
+
+.ink4 {
+  position: absolute;
+  bottom: 30%;
+  left: -15%;
+  height: 100px;
+  rotate: -10deg;
+}
+
+.monkeyDiv {
+  position: relative;
+  top: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.monkeyDivDesc {
+  width: 60vh;
+}
+
+.monkeyDivDesc h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+
+.monkeyDivDesc p {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.monkeyDiv img {
+  border-radius: 30px;
+}
+
+.specs {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specs h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+}
+
+table {
+  text-align: center;
+  width: 60%;
+  margin-top: 50px;
+}
+
+th {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+
+td {
+  border-top: 1px solid black;
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .monkeyTitle h1 {
+    font-size: 190px;
+  }
+
+  #year {
+    top: -8%;
+    left: 5%;
+  }
+
+  #monkeyEdition {
+    right: -5%;
+    bottom: -6%;
+  }
+
+  .monkeyContainer {
+    flex-direction: column;
+  }
+
+  .monkeyKeys {
+    height: 400px;
+  }
+
+  .monkeyDesc {
+    padding: 0px;
+  }
+
+  .strokes {
+    display: none;
+  }
+
+  .monkeyDiv {
+    flex-direction: column;
+  }
+
+  .monkeyDivDesc {
+    order: 1;
+  }
+
+  .monkeyDiv img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .monkeyTitle h1 {
+    font-size: 150px;
+  }
+
+  #monkeyEdition {
+    font-size: 90px;
+    bottom: -3%;
+    left: 5%;
+  }
+
+  .monkeyKeys {
+    height: 200px;
+  }
+
+  .monkeyDesc p {
+    font-size: 0.7rem;
+  }
+
+  .monkeyDiv img {
+    height: 200px;
+  }
+
+  .monkeyDivDesc {
+    width: 80%;
+  }
+
+  .monkeyDivDesc h1 {
+    font-size: 30px;
+  }
+
+  .monkeyDivDesc p {
+    font-size: 0.7rem;
+  }
+
+  .specs h1 {
+    font-size: 30px;
+  }
+
+  table th {
+    font-size: 20px;
+  }
+
+  table td {
+    font-size: 0.7rem;
+  }
+}
