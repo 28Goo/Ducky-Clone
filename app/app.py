@@ -1,7 +1,6 @@
 import flask
 from flask_session import Session
 from tempfile import mkdtemp
-import sqlite3
 
 
 app = flask.Flask(__name__)
